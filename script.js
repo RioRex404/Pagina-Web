@@ -1,4 +1,4 @@
-// Esperar a que el DOM esté completamente cargado
+
 document.addEventListener('DOMContentLoaded', function() {
     // Elementos del DOM
     const miBoton = document.getElementById('miBoton');
@@ -57,17 +57,17 @@ document.addEventListener('DOMContentLoaded', function() {
             animation: slideIn 0.3s ease;
         `;
         
-        // Colores según el tipo
+     
         if (tipo === 'success') {
             divMensaje.style.backgroundColor = '#28a745';
         } else {
             divMensaje.style.backgroundColor = '#dc3545';
         }
         
-        // Agregar al DOM
+
         document.body.appendChild(divMensaje);
         
-        // Remover después de 3 segundos
+        
         setTimeout(() => {
             divMensaje.remove();
         }, 3000);
@@ -106,4 +106,5 @@ document.addEventListener('DOMContentLoaded', function() {
         section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
         observer.observe(section);
     });
+
 });
