@@ -3,46 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Web</title>
+    <title>Rio Ferdinand - Fotografía</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>Bienvenido a Mi Página</h1>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#acerca">Acerca de</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
+    <header class="header">
+        <div class="social-icons left-icons">
+            <a href="https://www.facebook.com/rioferdinand.floresguzman/" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/reex_404/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+        
+        <a href="#" class="logo">
+            <div class="logo-icon">
+                <i class="fas fa-camera"></i>
+            </div>
+            <div class="logo-text">Rio Ferdinand</div>
+        </a>
+        
+        <div class="social-icons right-icons">
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
     </header>
 
-    <main>
-        <section id="inicio">
-            <h2>Sección Principal</h2>
-            <p>Este es el contenido principal de la página.</p>
-            <button id="miBoton">Haz clic aquí</button>
-        </section>
-
-        <section id="acerca">
-            <h2>Acerca de Nosotros</h2>
-            <p>Información sobre nuestra empresa o proyecto.</p>
-        </section>
-
-        <section id="contacto">
-            <h2>Contacto</h2>
-            <form id="formularioContacto">
-                <input type="text" id="nombre" placeholder="Tu nombre" required>
-                <input type="email" id="email" placeholder="Tu email" required>
-                <textarea id="mensaje" placeholder="Tu mensaje" required></textarea>
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
+    <main class="main-content">
+        <h1 class="section-title">Mi Blog Fotográfico</h1>
+        
+        <div class="content-grid">
+            <div class="text-content">
+                <p class="intro-text">Hola, soy <strong>Rio Ferdinand Flores Guzmán</strong></p>
+                <p>Tengo 17 años y estudio Ingeniería de Sistemas de Información, pero mi verdadera pasión es capturar momentos a través del lente. Este espacio es donde comparto mi visión del mundo a través de la fotografía.</p>
+                
+                <p>Desde las majestuosas montañas de la sierra hasta los vibrantes colores de Paucartambo, este blog es mi diario visual: un viaje a través de los lugares más emblemáticos de nuestro territorio, visto a través de los ojos de un joven fotógrafo en formación.</p>
+                
+                <div class="divider"></div>
+                
+                <button class="view-more-btn" id="viewMoreBtn">
+                    <span>EXPLORAR GALERÍA</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+            
+            <div class="image-content">
+                <img src="Recursos/Principal/Walking Skull Sticker by Gorillaz.gif" alt="Paisaje de montaña" class="main-image">
+            </div>
+        </div>
     </main>
 
-    <footer>
-        <p>&copy; 2024 Mi Página Web. Todos los derechos reservados.</p>
+    <section class="albums-section">
+        <h2 class="section-subtitle">Mis Álbumes</h2>
+        
+        <div class="albums-grid">
+            <div class="album-card">
+                <div class="album-icon">
+                    <i class="fas fa-mountain"></i>
+                </div>
+                <h3>Paisajes de la Sierra</h3>
+                <p>Impresionantes vistas de nuestras montañas y valles, capturadas en diferentes estaciones del año.</p>
+                <div class="album-stats">
+                    <span><i class="fas fa-images"></i> 24 fotos</span>
+                </div>
+            </div>
+            
+            <div class="album-card">
+                <div class="album-icon">
+                    <i class="fas fa-landmark"></i>
+                </div>
+                <h3>Paucartambo</h3>
+                <p>La riqueza cultural y arquitectónica de este emblemático pueblo andino.</p>
+                <div class="album-stats">
+                    <span><i class="fas fa-images"></i> 18 fotos</span>
+                </div>
+            </div>
+            
+            <div class="album-card">
+                <div class="album-icon">
+                    <i class="fas fa-tree"></i>
+                </div>
+                <h3>Naturaleza Viva</h3>
+                <p>Flora y fauna autóctona en su hábitat natural, un tributo a la biodiversidad local.</p>
+                <div class="album-stats">
+                    <span><i class="fas fa-images"></i> 32 fotos</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="upcoming-section">
+        <div class="upcoming-content">
+            <h2><i class="fas fa-hourglass-half"></i> Próximamente</h2>
+            <p>Subire los archivos proximamente</p>
+            <div class="coming-soon-badge">Muy pronto</div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p><i class="fas fa-envelope"></i> riorex777.epic@gmail.com</p>
+                <p><i class="fas fa-phone"></i> +51 950 333 692</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Sígueme</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/rioferdinand.floresguzman/" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/reex_404/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Ubicación</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Cusco, Perú</p>
+                <p>Valle Sagrado de los Incas</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Rio Ferdinand Flores - Fotografía. Todos los derechos reservados.</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
